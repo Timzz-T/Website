@@ -19,6 +19,7 @@ function addListItem() {
     priorityCell.innerHTML = priority.value;
     deleteCell.innerHTML = "<button class='deleteBut' onclick='this.closest(\"tr\").remove()'><img src='Images/delete.svg'></button>";
 
+    //ckearing inputs
     item.value = "";
     date.value = "";
     priority.value = "";
@@ -35,9 +36,8 @@ function addListItem() {
 });
 
 document.getElementById("priorityInput").addEventListener("input", function(event) {
+    //sets a hard max of 3
     if (this.value >= 3) {
         this.value = 3;
     }
-
-
 });
