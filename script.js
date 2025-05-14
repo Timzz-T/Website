@@ -33,3 +33,11 @@ function addListItem() {
         }
     });
 });
+
+document.getElementById("priorityInput").addEventListener("input", function(event) {
+    if (this.value >= 3) {
+        this.value = 3;
+    }
+
+
+});
